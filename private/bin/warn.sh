@@ -13,7 +13,8 @@ echo "============================================"
 
 if [ -z "$WARN_MESSAGE" ]; then
     echo "WARN_MESSAGE is not set. Exiting with error."
-    exit 69
+    echo $? 
+    # 69
 fi
 
 if [ -z "$WARN_FROM_NAME" ]; then
